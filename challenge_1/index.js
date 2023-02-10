@@ -6,19 +6,21 @@ class ProductManager {
         const products = this.getProducts();
         const addSuccessfully = 'Product has been add successfully'
         if(products.length){
-            products.find(element => {
-                if(element.code === item.code){
-                    return console.log('This products has already been added!!');
-                } else {
-                    let lastIndex = products.length - 1
-                    let lastId = products[lastIndex].id;
-                    item.id = lastId + 1;
-                    let id = item.id;
-                    this.products.push(item);
-                    console.log(addSuccessfully)
-                    return id;
-                    }
-            })
+            
+            const result = products.find( element => element.code === item.code )
+            
+            if(result){
+                return console.log('This products has already been added!!')
+            } else {
+                let lastIndex = products.length - 1;
+                let lastId = products[lastIndex].id;
+                item.id = lastId + 1;
+                let id = item.id;
+                this.products.push(item);
+                console.log(addSuccessfully)
+                return id;
+            }
+
         } else {
             item.id = 1;
             this.products.push(item);
@@ -65,4 +67,6 @@ productsManager.addProduct({
     stock:25
 });
 
+
 productsManager.getProductById(2);
+
