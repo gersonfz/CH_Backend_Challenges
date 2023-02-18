@@ -6,10 +6,7 @@ class ProductManager {
         const products = this.getProducts();
         const addSuccessfully = 'Product has been add successfully'
         if(products.length){
-            
-            const result = products.find( element => element.code === item.code )
-            
-            if(result){
+            if(products.find( element => element.code === item.code )){
                 return console.log('This products has already been added!!')
             } else {
                 let lastIndex = products.length - 1;
