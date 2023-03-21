@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Gafas Bolivia",
+    "description": "Gafas estilo empresarial",
+    "code": "BO20003",
+    "price": 18500,
+    "stock": 50,
+    "status": false,
+    "category": "Gafas de vision",
+    "thumbnails": "https://cdn.shopify.com/s/files/1/0231/8811/1438/products/small_square-8719154667169-front-01-sensaya-syom5003-eyewear-green-silver_869x869.jpg?v=1663862134",
+    "id": "3fc7b37b-867b-4a67-99ca-9caec205b808"
+  },
+  {
+    "title": "Gafas 47 Street",
+    "description": "Gafas de sol, el verano nunca se vio tan bien",
+    "code": "code-product",
+    "price": 12000,
+    "stock": 50,
+    "status": false,
+    "category": "Gafas de sol",
+    "thumbnails": "https://d2r9epyceweg5n.cloudfront.net/stores/002/202/682/products/60004-color-1-21-bb1e8b56710470f6f316618823691955-1024-1024.jpg",
+    "id": "87f5ad20-638f-4fb5-8bf2-06eb746ac9e1"
+  },
+  {
+    "title": "Gafas Valdez",
+    "description": "Gafas Valdez, estilo y vision nunca se sintieron tan bien",
+    "code": "code-gafas",
+    "price": 18000,
+    "stock": 50,
+    "status": true,
+    "category": "Gafas de vision",
+    "thumbnails": "https://d2r9epyceweg5n.cloudfront.net/stores/002/202/682/products/acg_0240-1920x10801-58cca7ff32615d5a5116624692024414-640-0.jpg",
+    "id": "910a2c96-d5fc-4270-a2e5-ec2f6719848d"
+  }
+]
