@@ -28,11 +28,7 @@ class ProductManager {
     }
     async getProductsById(id){
         try {
-            const product = await ProductsMongo.getAll();
-            let productById;
-            product.map(item => {
-                item.id === id && (productById = item);
-            });
+            const productById = await ProductsMongo.getById(id);
             return productById;
         }
         catch (error) {
@@ -42,9 +38,9 @@ class ProductManager {
     async updateProduct(id, item){
         try {
             const product = await ProductsMongo.getAll();
-            const productId = product.findIndex(product => product.id === id);
+            const productId = product.findIndex(product => product.id === _id);
             if(productId >= 0){
-                item.id = id
+                item.id = _id
                 product[productId] = item;
                 await ProductsMongo.addProduct();
                 return product[productId];
@@ -57,7 +53,7 @@ class ProductManager {
     async deleteProduct(id){
         try {
             const allProduct = await ProductsMongo.getAll();
-            const deleteProduct = allProduct.findIndex(item => item.id === id);
+            const deleteProduct = allProduct.findIndex(item => item.id === _id);
             if(deleteProduct >= 0) {
                 allProduct.splice(deleteProduct, 1);
                 await ProductsMongo.addProduct();
