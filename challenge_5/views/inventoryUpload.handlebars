@@ -1,0 +1,56 @@
+<form id="formUpload" action="/api/inventoryupload" method="post">
+    <!-- Campo nombre del producto -->
+    <div class="form-group">
+        <label for="name">Nombre</label>
+        <input id="name" class="form-control" type="text" name="title" placeholder="title" required />
+    </div>
+
+    <!-- Campo precio del producto -->
+    <div class="form-group">
+        <label for="price">Precio</label>
+        <input id="price" class="form-control" type="number" step="0.01" name="price" placeholder="price" required />
+    </div>
+
+    <!-- Campo codigo del producto -->
+    <div class="form-group">
+        <label for="code">Codigo de producto</label>
+        <input id="code" class="form-control" type="text" name="code" placeholder="code" />
+    </div>
+
+    <!-- Campo stock del producto -->
+    <div class="form-group">
+        <label for="stock">Indique el stock</label>
+        <input id="stock" class="form-control" type="number" name="stock" placeholder="stock" />
+    </div>
+
+    <!-- Campo para indicar si status true o false del producto -->
+    <div class="form-check">
+        <label class="form-check-label" for="status">
+            Status
+        </label>
+        <input class="form-check-input" name="status" type="checkbox" value="on" placeholder="status" id="status" checked>
+    </div>
+
+    <!-- Campo categoria del producto -->
+    <div class="form-group">
+        <label for="category">Indicar categoria del producto: </label>
+        <input id="category" class="form-control" type="text" name="category" placeholder="category" />
+    </div>
+
+    <!-- Campo descripcion del producto -->
+    <div class="form-group">
+        <label for="description">Indique una descripcion</label>
+        <input id="description" class="form-control" type="text" name="description" placeholder="description" />
+    </div>
+
+    <!-- Campo url de la foto del producto -->
+    <div class="form-group">
+        <label for="thumbnails">Foto URL</label>
+        <input id="thumbnails" class="form-control" type="url" name="thumbnails" placeholder="thumbnails" />
+    </div>
+
+    <!-- Botón de envío -->
+    <button class="btn btn-success m-3">Guardar</button>
+</form>
+
+<script src="/js/index.js"></script>
